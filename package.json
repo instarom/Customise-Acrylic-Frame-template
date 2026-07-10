@@ -1,0 +1,33 @@
+{
+  "name": "turag-studio",
+  "version": "1.0.0",
+  "description": "TuragStudio - Custom Photo Frames, Acrylic Frames & Home Decor Platform",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": ["custom-frames", "acrylic-frames", "home-decor", "photo-frames"],
+  "author": "TuragStudio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "razorpay": "^2.8.4",
+    "nodemailer": "^6.9.1",
+    "express-validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "concurrently": "^7.6.0"
+  }
+}
